@@ -16,6 +16,10 @@ export default function TabsLayout() {
           return <MaterialIcons name={icon as any} size={size} color={color} />;
         },
       })}
-    />
+    >
+      <Tabs.Screen name="index" options={{ title: 'Início' }} />
+      <Tabs.Screen name="trips" options={{ title: 'Serviços' }} />
+      <Tabs.Screen name="profile" options={{ title: 'Perfil' }} />
+    </Tabs>
   );
 }
